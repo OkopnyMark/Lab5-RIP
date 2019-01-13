@@ -1,0 +1,16 @@
+{% extends 'NAA.html'%}
+
+{%block title%}Заказ № {{order.id}}{%endblock%}
+
+{% block body %}
+
+<html>
+<body>
+    <p class='dict_element'>
+        Страница заказа № {{order.id}}
+        <li>{{order.title}}</li>
+    </p>
+
+</body>
+</html>
+{% endblock %}

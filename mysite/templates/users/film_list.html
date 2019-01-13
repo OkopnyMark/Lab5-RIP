@@ -1,0 +1,14 @@
+{% extends 'NAA.html'%}
+
+{%block title%}Фильмы{%endblock%}
+
+{% block body %}
+<h2>Films</h2>
+<ul>
+    {% for film in object_list %}
+        <li class="text">{{ film.name }}</li>
+    {%empty%}
+        <li>внутри только пустота</li>
+    {% endfor %}
+</ul>
+{% endblock %}

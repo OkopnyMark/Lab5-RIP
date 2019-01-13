@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+                .dict_element {
+                    text-align: center;
+                    color: goldenrod;
+                    background-color: wheat;
+                    font-size: 40px;
+                    font-family: 'Courier New', Courier, monospace;
+                }
+                .dict {
+                    text-align: center;
+                    color: firebrick;
+                    background-color: cornflowerblue;
+                }
+                .btn-group .text {
+                    font-size: 30px;
+                    font-family: Georgia, 'Times New Roman';
+                    color: firebrick;
+                }
+                
+                
+                .btn-group .button {
+                    background-color: goldenrod;
+                    border: 2px solid firebrick;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    width: 150px;
+                    display: block;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    box-shadow: 0 5px firebrick;
+                    width: 200px;
+                }
+                
+                .btn-group .button:not(:last-child) {
+                    border-bottom: none; /* Prevent double borders */
+                }
+                
+                .btn-group .button:hover {
+                    background-color: gold;
+                    box-shadow: 0 5px firebrick;
+                }
+                .btn-group .button:active {
+                  background-color: goldenrod;
+                  box-shadow: 0 5px firebrick;
+                  transform: translateY(4px);
+                }
+                </style>
+                
+        <title>{%block title%}{%endblock%}</title>
+    </head>
+    <body>
+        <div>
+            Общая часть
+        </div>
+        <div>
+            {% block body %}{% endblock %}
+        </div>
+    </body>
+</html>

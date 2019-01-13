@@ -1,0 +1,22 @@
+{% extends 'NAA.html'%}
+
+{%block title%}Заказы{%endblock%}
+
+{% block body %}
+<html>
+    
+<body>
+
+    <ul>
+        <p class='btn-group'>
+            {% for order in orders %}
+                {%include 'order_element.html'%}
+            {%empty%}
+                <li>внутри только пустота</li>
+            {% endfor %}
+        </p>
+    </ul>
+
+</body>
+</html>
+{% endblock %}
